@@ -5,11 +5,15 @@ urllib3.disable_warnings()
 
 class PyVerge(object):
 	
-	def get_Blockcount(self):
+	def get_Connectioncount(self):
 		url = "https://verge-blockchain.info/api/getconnectioncount"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
-		
+	
+	def get_Blockcount(self):
+		url  = " https://verge-blockchain.info/api/getconnectioncount"
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
 	
 	def get_Blockindex(self,index):
 		pass
