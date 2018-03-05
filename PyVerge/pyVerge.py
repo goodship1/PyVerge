@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 
 class PyVerge(object):
 	
@@ -12,6 +13,12 @@ class PyVerge(object):
 		pass
 	
 	def get_Top(self,top_accounts):
+		pass
+	
+	def get_Moneysupply(self):
+		pass
+	
+	def get_Wealthdistro(self):
 		pass
 	
 
