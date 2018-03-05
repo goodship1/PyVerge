@@ -15,8 +15,12 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
-	def get_Blockindex(self,index):
-		pass
+	def get_Blockhash(self,index=0):
+		"""gets the block hash at index value
+		if no value provided gets the gensis block by default"""
+		url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
 	
 	def get_Block(self):
 		pass
@@ -32,4 +36,4 @@ class PyVerge(object):
 	
 
 c = PyVerge()
-print(c.get_Blockcount())
+print(c.get_Blockhash())

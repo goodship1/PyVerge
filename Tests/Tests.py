@@ -4,7 +4,11 @@ import requests
 def test_Blockcount():
 	pass
 	
-def test_getBlockindex():
+
+def test_get_Connectioncount():
+	pass
+	
+def test_getBlockhash():
 	pass
 	
 def test_getBlock():
