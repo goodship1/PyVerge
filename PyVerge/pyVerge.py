@@ -34,5 +34,4 @@ class PyVerge(object):
 		pass
 	
 
-c = PyVerge()
-print(c.get_Blockhash())
+
