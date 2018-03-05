@@ -11,7 +11,7 @@ class PyVerge(object):
 		return request_To_verge.text
 	
 	def get_Blockcount(self):
-		url  = " https://verge-blockchain.info/api/getconnectioncount"
+		url  = "https://verge-blockchain.info/api/getblockcount"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
@@ -22,8 +22,7 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
-	def get_Block(self):
-		pass
+
 	
 	def get_Top(self,top_accounts):
 		pass
