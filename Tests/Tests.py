@@ -10,5 +10,11 @@ def test_getBlockindex():
 def test_getBlock():
 	pass
 
-def get_top():
+def test_Get_top():
+	pass
+
+def test_get_Moneysupply(self):
+	pass
+
+def test_get_Wealthdistro():
 	pass
