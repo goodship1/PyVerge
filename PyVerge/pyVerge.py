@@ -22,6 +22,9 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
+	def get_Satoshi(self):
+		pass
+	
 
 	
 	def get_Top(self,top_accounts):
