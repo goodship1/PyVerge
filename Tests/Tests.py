@@ -22,3 +22,9 @@ def test_get_Moneysupply(self):
 
 def test_get_Wealthdistro():
 	pass
+	
+
+def get_Satoshi():
+	pass
+
+

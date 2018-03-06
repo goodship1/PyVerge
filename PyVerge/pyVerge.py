@@ -23,11 +23,14 @@ class PyVerge(object):
 		return request_To_verge.text
 	
 	def get_Satoshi(self):
+		"""Returns the satoshi value of Verge Coin"""
+		
 		pass
 	
 
 	
 	def get_Top(self,top_accounts):
+		"""Gets the top account holders"""
 		pass
 	
 	def get_Moneysupply(self):
@@ -36,5 +39,6 @@ class PyVerge(object):
 	def get_Wealthdistro(self):
 		pass
 	
-
+	def get_movement(self,date):
+		pass
 
