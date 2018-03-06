@@ -27,4 +27,7 @@ def test_get_Wealthdistro():
 def get_Satoshi():
 	pass
 
+def get_Movement():
+	pass
+	
 

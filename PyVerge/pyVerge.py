@@ -34,11 +34,13 @@ class PyVerge(object):
 		pass
 	
 	def get_Moneysupply(self):
-		pass
+		url = "https://verge-blockchain.info/ext/getmoneysupply"
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
 	
 	def get_Wealthdistro(self):
 		pass
 	
-	def get_movement(self,date):
+	def get_Movement(self,date):
 		pass
 
