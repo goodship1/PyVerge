@@ -1,5 +1,6 @@
 import requests
 import urllib3
+import BeautifulSoup
 urllib3.disable_warnings()
 
 
@@ -22,9 +23,13 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
+	def _get_Satoshi_helper(self):
+		pass
+	
+	
+	
 	def get_Satoshi(self):
 		"""Returns the satoshi value of Verge Coin"""
-		
 		pass
 	
 
