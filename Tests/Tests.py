@@ -5,29 +5,29 @@ def test_Blockcount():
 	pass
 	
 
-def test_get_Connectioncount():
+def test_Get_connectioncount():
 	pass
 	
-def test_getBlockhash():
+def test_Get_blockhash():
 	pass
 	
-def test_getBlock():
+def test_Get_Block():
 	pass
 
 def test_Get_top():
 	pass
 
-def test_get_Moneysupply(self):
+def test_Get_moneysupply(self):
 	pass
 
-def test_get_Wealthdistro():
+def test_Get_wealthdistro():
 	pass
 	
 
-def get_Satoshi():
+def test_Get_satoshi():
 	pass
 
-def get_Movement():
+def test_Get_Movement():
 	pass
 	
 
