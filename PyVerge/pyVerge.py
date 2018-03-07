@@ -6,10 +6,24 @@ urllib3.disable_warnings()
 
 class PyVerge(object):
 	
+	
+	
+	def __str__(self):
+		return "pyverge is a python libary which instracts with verge blockchain"
+	
+	def get_Difficulty(self,difficulty):
+		pass
+		
+	
+	def _get_Diffculty_json_Helper(self):
+		"""funcutions used to format json data"""
+		pass	
+	
 	def get_Connectioncount(self):
 		url = "https://verge-blockchain.info/api/getconnectioncount"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
+	
 	
 	def get_Blockcount(self):
 		url  = "https://verge-blockchain.info/api/getblockcount"
@@ -24,8 +38,12 @@ class PyVerge(object):
 		return request_To_verge.text
 	
 	def _get_Satoshi_helper(self):
+		"""helper to scrap verge website"""
 		pass
 	
+	def _get_Top_helper(self):
+		"""get_top helper to scrap verge website"""
+		pass
 	
 	
 	def get_Satoshi(self):

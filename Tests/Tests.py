@@ -32,6 +32,10 @@ def test_Get_moneysupply():
 	request_To_verge = requests.get(url,verify = True)
 	assert verge.get_Moneysupply() == request.To_verge.text
 
+def test_get_Diffculty():
+	pass
+
+
 def test_Get_wealthdistro():
 	pass
 	
