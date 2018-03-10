@@ -86,7 +86,3 @@ class PyVerge(object):
 	def get_Movement(self,date):
 		pass
 
-c = PyVerge()
-c.get_Balance("DCUWt5ctZcPdPMYPV2o1xK1kqv7jNwxu4h")
-f = PyVerge()
-f.get_Balance("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")
