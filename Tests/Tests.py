@@ -59,6 +59,12 @@ def test_transcation_Search():
 	assert(verge.transcation_Search(number_Transaction,min_amount)) == request_To_verge.text
 
 
+def get_Block():
+	Hash = "fbb3b1c4da06a043e6b2f45799bda5703c115911f80a58e050423930bc0bfa68"
+	url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
+	request_To_verge = requests.get(url,verify=False)
+	assert(verge.get_Block(Hash)) == request_To_verge.text
+
 def test_Get_wealthdistro():
 	pass
 	
