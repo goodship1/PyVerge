@@ -9,7 +9,7 @@ class PyVerge(object):
 	
 	def __init__(self):
 		self.transcation_count = 0
-		self.transaction = []
+		self.transaction = {}
 	
 	def __str__(self):
 		return "pyverge is a python libary which instracts with verge blockchain"
@@ -18,6 +18,12 @@ class PyVerge(object):
 		return self
 	
 	def next(self):
+		pass
+	
+	def __gt__(self,other):
+		pass
+	
+	def __eq__(self,other):
 		pass
 	
 	def get_Difficulty(self,difficulty):
@@ -59,10 +65,6 @@ class PyVerge(object):
 	
 
 	
-	def get_Top(self,top_accounts):
-		"""Gets the top account holders"""
-		pass
-	
 	def get_Moneysupply(self):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
 		request_To_verge = requests.get(url,verify = False)
@@ -73,6 +75,7 @@ class PyVerge(object):
 	
 	def get_Balance(self,address):
 		url = "https://verge-blockchain.info/ext/getbalance/%s"%address
+		self.addr = address
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 		

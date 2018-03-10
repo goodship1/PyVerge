@@ -22,6 +22,12 @@ def test_Get_blockhash():
 	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
 	request_To_verge = requests.get(url,verify = False)
 	assert verge.get_Blockhash(index) == request_To_verge.text
+	
+def get_Balance():
+	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
+	url ="https://verge-blockchain.info/ext/getbalance/%s"%address
+	request_To_verge = requests.get(url,verify = False)
+	assert(verge.get_Balance(address)) == request_To_verge.text
 
 
 def test_Get_top():
@@ -29,8 +35,8 @@ def test_Get_top():
 
 def test_Get_moneysupply():
 	url = "https://verge-blockchain.info/ext/getmoneysupply"
-	request_To_verge = requests.get(url,verify = True)
-	assert verge.get_Moneysupply() == request.To_verge.text
+	request_To_verge = requests.get(url,verify = False)
+	assert verge.get_Moneysupply() == request_To_verge.text
 
 def test_get_Diffculty():
 	pass
