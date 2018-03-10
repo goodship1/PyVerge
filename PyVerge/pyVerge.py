@@ -7,24 +7,10 @@ urllib3.disable_warnings()
 class PyVerge(object):
 	
 	
-	def __init__(self):
-		self.transcation_count = 0
-		self.transaction = {}
-	
+
 	def __str__(self):
 		return "pyverge is a python libary which instracts with verge blockchain"
 	
-	def __iter__(self):
-		return self
-	
-	def next(self):
-		pass
-	
-	def __gt__(self,other):
-		pass
-	
-	def __eq__(self,other):
-		pass
 	
 	def get_Difficulty(self):
 		url = "https://verge-blockchain.info/api/getdifficulty"
@@ -54,20 +40,8 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
-	def _get_Satoshi_helper(self):
-		url = "https://verge-blockchain.info/"
-		request_To_verge = requests.get(url)
-		pass
 	
-	def _get_Top_helper(self):
-		"""get_top helper to scrap verge website"""
-		pass
-	
-	
-	def get_Satoshi(self):
-		"""Returns the satoshi value of Verge Coin"""
-		pass
-	
+
 
 	
 	def get_Moneysupply(self):
@@ -90,6 +64,4 @@ class PyVerge(object):
 	def get_Wealthdistro(self):
 		pass
 	
-	def get_Movement(self,date):
-		pass
-
+	
