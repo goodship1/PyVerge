@@ -12,12 +12,9 @@ class PyVerge(object):
 		return "pyverge is a python libary which instracts with verge blockchain"
 	
 	def get_Difficulty(self,difficulty):
-		pass
-		
-	
-	def _get_Diffculty_json_Helper(self):
-		"""funcutions used to format json data"""
-		pass	
+		url = "https://verge-blockchain.info/api/getdifficulty"
+		request_To_verge = requests.get(url ,verify = False)
+		return request_To_verge.text
 	
 	def get_Connectioncount(self):
 		url = "https://verge-blockchain.info/api/getconnectioncount"
@@ -38,7 +35,8 @@ class PyVerge(object):
 		return request_To_verge.text
 	
 	def _get_Satoshi_helper(self):
-		"""helper to scrap verge website"""
+		url = "https://verge-blockchain.info/"
+		request_To_verge = requests.get(url)
 		pass
 	
 	def _get_Top_helper(self):
@@ -66,4 +64,6 @@ class PyVerge(object):
 	
 	def get_Movement(self,date):
 		pass
+
+c = PyVerge()
 
