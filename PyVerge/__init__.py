@@ -1,1 +1,1 @@
-from pyVerge import PyVerge
+from PyVerge.PyVerge import pyVerge
