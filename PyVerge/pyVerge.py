@@ -26,7 +26,7 @@ class PyVerge(object):
 	def __eq__(self,other):
 		pass
 	
-	def get_Difficulty(self,difficulty):
+	def get_Difficulty(self):
 		url = "https://verge-blockchain.info/api/getdifficulty"
 		request_To_verge = requests.get(url ,verify = False)
 		return request_To_verge.text

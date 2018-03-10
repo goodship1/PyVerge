@@ -39,7 +39,10 @@ def test_Get_moneysupply():
 	assert verge.get_Moneysupply() == request_To_verge.text
 
 def test_get_Diffculty():
-	pass
+	url = "https://verge-blockchain.info/api/getdifficulty"
+	request_To_verge = requests.get(url,verify = False)
+	assert(verge.get_Difficulty())== request_To_verge.text
+	
 
 
 def test_Get_wealthdistro():
