@@ -66,9 +66,3 @@ class PyVerge(object):
 		return request_To_verge.text
 	
 	
-<<<<<<< HEAD
-=======
-	def get_Movement(self,date):
-		pass
-
->>>>>>> 470eb6c1fd86bcba69f58a11eb9b88fdd21bcb4f
