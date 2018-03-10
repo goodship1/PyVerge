@@ -69,10 +69,5 @@ def test_Get_wealthdistro():
 	pass
 	
 
-def test_Get_satoshi():
-	pass
 
-def test_Get_movement():
-	pass
-	
 
