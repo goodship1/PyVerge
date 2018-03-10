@@ -70,8 +70,10 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
-	def transcation_search(self,min_amount,number_Transcation):
-		pass
+	def transcation_Search(self,min_amount,number_Transcation):
+		url = "https://verge-blockchain.info/ext/getlasttxs/%s/%s"%(number_Transcation,min_amount)
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
 	
 	def get_Balance(self,address):
 		url = "https://verge-blockchain.info/ext/getbalance/%s"%address
@@ -86,7 +88,3 @@ class PyVerge(object):
 	def get_Movement(self,date):
 		pass
 
-c = PyVerge()
-c.get_Balance("DCUWt5ctZcPdPMYPV2o1xK1kqv7jNwxu4h")
-f = PyVerge()
-f.get_Balance("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")

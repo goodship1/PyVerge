@@ -51,6 +51,13 @@ def test_get_Diffculty():
 	assert(verge.get_Difficulty())== request_To_verge.text
 	
 
+def test_transcation_Search():
+	number_Transaction = 10
+	min_amount = 10
+	url = "https://verge-blockchain.info/ext/getlasttxs/%s/%s"%(number_Transcation,min_amount)
+	request_To_Verge = requests.get(url,verify = False)
+	assert(verge.transcation_Search(number_Transaction,min_amount)) == request_To_verge.text
+
 
 def test_Get_wealthdistro():
 	pass
