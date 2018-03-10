@@ -7,9 +7,18 @@ urllib3.disable_warnings()
 class PyVerge(object):
 	
 	
+	def __init__(self):
+		self.transcation_count = 0
+		self.transaction = []
 	
 	def __str__(self):
 		return "pyverge is a python libary which instracts with verge blockchain"
+	
+	def __iter__(self):
+		return self
+	
+	def next(self):
+		pass
 	
 	def get_Difficulty(self,difficulty):
 		url = "https://verge-blockchain.info/api/getdifficulty"
@@ -58,6 +67,16 @@ class PyVerge(object):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
+	
+	def transcation_search(self,min_amount,number_Transcation):
+		pass
+	
+	def get_Balance(self,address):
+		url = "https://verge-blockchain.info/ext/getbalance/%s"%address
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
+		
+	
 	
 	def get_Wealthdistro(self):
 		pass
