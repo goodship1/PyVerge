@@ -65,5 +65,4 @@ class PyVerge(object):
 	def get_Movement(self,date):
 		pass
 
-c = PyVerge()
 
