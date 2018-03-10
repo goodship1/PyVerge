@@ -65,9 +65,10 @@ def get_Block():
 	request_To_verge = requests.get(url,verify=False)
 	assert(verge.get_Block(Hash)) == request_To_verge.text
 
-def test_Get_wealthdistro():
-	pass
-	
+def test_Get_Distribution():
+	url = "https://verge-blockchain.info/ext/getdistribution"
+	request_To_verge = request.get(url,verify=False)
+	assert(verge.get_Distribution())== request_To_verge.text
 
 
 

@@ -60,7 +60,9 @@ class PyVerge(object):
 		
 	
 	
-	def get_Wealthdistro(self):
-		pass
+	def get_Distribution(self):
+		url = "https://verge-blockchain.info/ext/getdistribution"
+		request_To_verge = requests.get(url,verify = False)
+		return request_To_verge.text
 	
 	
