@@ -75,7 +75,6 @@ class PyVerge(object):
 	
 	def get_Balance(self,address):
 		url = "https://verge-blockchain.info/ext/getbalance/%s"%address
-		self.addr = address
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 		
@@ -87,4 +86,7 @@ class PyVerge(object):
 	def get_Movement(self,date):
 		pass
 
-
+c = PyVerge()
+c.get_Balance("DCUWt5ctZcPdPMYPV2o1xK1kqv7jNwxu4h")
+f = PyVerge()
+f.get_Balance("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")

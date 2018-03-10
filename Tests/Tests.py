@@ -22,7 +22,14 @@ def test_Get_blockhash():
 	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
 	request_To_verge = requests.get(url,verify = False)
 	assert verge.get_Blockhash(index) == request_To_verge.text
-	
+
+
+def test_Get_blockhash_With_non_Genesis():
+	index = 12
+	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
+	request_To_verge = request.get(url,verify = False)
+	assert(verge.get_Blockhash(index))== request_To_verge.text
+
 def get_Balance():
 	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
 	url ="https://verge-blockchain.info/ext/getbalance/%s"%address
