@@ -7,6 +7,7 @@ A Python api client for intracting with the Verge block exporer
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
+* [Documentation](#documentation)
 * [Contribution](#contribution)
 
 
