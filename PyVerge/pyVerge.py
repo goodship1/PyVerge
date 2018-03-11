@@ -29,7 +29,7 @@ class PyVerge(object):
 	
 	def get_Block(self,Hash):
 		url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
-		request_To_verge = request.get(url,verify = False)
+		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
 	def get_Blockhash(self,index=0):
