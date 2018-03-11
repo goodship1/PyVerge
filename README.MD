@@ -11,7 +11,7 @@ A Python api client for intracting with the verge block exporer
 
 ## Installation
 
- - 1 Clone repo
- - 2 python setup.py install
+ -  Clone repo
+ -  python setup.py install
  
  
