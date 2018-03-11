@@ -16,7 +16,7 @@ A Python api client for intracting with the verge block exporer
  
  
 ### Usage
-''' python
+``` python
  
 from PyVerge import PyVerge
 
@@ -43,4 +43,4 @@ print(verge.get_Balance(address))
 
 print(verge.get_Moneysupply())
 14695794120.548811
-'''
+```
