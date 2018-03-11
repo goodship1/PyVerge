@@ -27,7 +27,7 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
-	def get_block(self,Hash):
+	def get_Block(self,Hash):
 		url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
 		request_To_verge = request.get(url,verify = False)
 		return request_To_verge.text
