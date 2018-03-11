@@ -89,7 +89,7 @@ print(verge.get_Block(Hash))
   - Get hash information
   
 ### Documentation
-     [Link Text](https://github.com/goodship1/wiki/Documentation)
+     [Link Text](https://github.com/PyVerge/wiki/Documentation)
   
   
   
