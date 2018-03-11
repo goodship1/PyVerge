@@ -1,12 +1,13 @@
 # PyVerge
 
-A Python api client for intracting with the verge block exporer
+A Python api client for intracting with the Verge block exporer
 
 ### Table of content
  
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
+* [contribution](#contribution)
 
 
 ## Installation
@@ -81,3 +82,8 @@ print(verge.get_Block(Hash))
 }
 
 ```
+### Features
+  - Get balance from address
+  - Get money supply
+  - Get hash information
+  
