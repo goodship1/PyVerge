@@ -88,6 +88,11 @@ print(verge.get_Block(Hash))
   - Get money supply
   - Get hash information
   
+### Documentation
+    - click https://github.com/goodship1/PyVerge/wiki/Documentation
+  
+  
+  
 ### Contribution 
  - Feel to create a pull request 
  
