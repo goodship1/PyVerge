@@ -7,7 +7,7 @@ A Python api client for intracting with the Verge block exporer
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
-* [contribution](#contribution)
+* [Contribution](#contribution)
 
 
 ## Installation
@@ -87,3 +87,7 @@ print(verge.get_Block(Hash))
   - Get money supply
   - Get hash information
   
+### Contribution 
+ - Feel to create a pull request 
+ 
+ 
