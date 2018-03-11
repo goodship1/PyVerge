@@ -88,7 +88,7 @@ print(verge.get_Block(Hash))
   - Get hash information
   
 ### Documentation
-      - In Wiki
+  - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
   
   
   
