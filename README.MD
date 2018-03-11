@@ -81,7 +81,6 @@ print(verge.get_Block(Hash))
   ],
   "signature": "3044022034dc7ff97611880772bd16dfb2b8745e6dffb47f4e274ebe14d531105245f3b102200b267c8f034672b2ae84ce5e38ae2a7d26930c5572f4575c266faa55808e3afb"
 }
-
 ```
 ### Features
   - Get balance from address
