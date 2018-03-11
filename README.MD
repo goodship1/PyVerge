@@ -15,7 +15,7 @@ A Python api client for intracting with the verge block exporer
  -  python setup.py install
  
  
-## Usage
+### Usage
 '''python
  
 from PyVerge import PyVerge
