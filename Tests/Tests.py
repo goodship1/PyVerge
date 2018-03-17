@@ -27,7 +27,7 @@ def test_Get_blockhash():
 def test_Get_blockhash_With_non_Genesis():
 	index = 12
 	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
-	request_To_verge = request.get(url,verify = False)
+	request_To_verge = requests.get(url,verify = False)
 	assert(verge.get_Blockhash(index))== request_To_verge.text
 
 def get_Balance():
@@ -52,10 +52,10 @@ def test_get_Diffculty():
 
 def test_transcation_Search():
 	number_Transaction = 10
-	min_amount = 10
-	url = "https://verge-blockchain.info/ext/getlasttxs/%s/%s"%(number_Transcation,min_amount)
-	request_To_Verge = requests.get(url,verify = False)
-	assert(verge.transcation_Search(number_Transaction,min_amount)) == request_To_verge.text
+	min_Amount = 10
+	url = "https://verge-blockchain.info/ext/getlasttxs/%s/%s"%(number_Transaction,min_Amount)
+	request_To_verge = requests.get(url,verify = False)
+	assert(verge.transcation_Search(number_Transaction,min_Amount)) == request_To_verge.text
 
 
 def get_Block():
@@ -66,9 +66,13 @@ def get_Block():
 
 def test_Get_Distribution():
 	url = "https://verge-blockchain.info/ext/getdistribution"
-	request_To_verge = request.get(url,verify=False)
+	request_To_verge = requests.get(url,verify=False)
 	assert(verge.get_Distribution())== request_To_verge.text
 
 
 def testing_Negative_index():
-	pass
+	""" Testing of -1 getting block index"""
+	index = -1
+	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
+	request_To_verge = requests.get(url,verify = False)
+	assert(verge.get_Blockhash(index)) == request_To_verge.text
