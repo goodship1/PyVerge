@@ -65,4 +65,7 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 	
+	def get_Qrcode():
+		pass
+	
 	
