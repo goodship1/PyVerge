@@ -76,3 +76,6 @@ def testing_Negative_index():
 	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
 	request_To_verge = requests.get(url,verify = False)
 	assert(verge.get_Blockhash(index)) == request_To_verge.text
+
+def testing_Get_qrcode():
+	pass
