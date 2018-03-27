@@ -8,7 +8,7 @@ class PyVerge(object):
 	
 
 	def __str__(self):
-		return "pyverge is a python libary which instracts with verge blockchain"
+		return "PyVerge is a python libary which instracts with verge blockchain"
 	
 	
 	def get_Difficulty(self):
