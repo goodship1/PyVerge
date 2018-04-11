@@ -7,4 +7,5 @@ setup(
 	  author ='gavin goodship',
 	  packages=['PyVerge'],
 	  install_requires=["requests"]
+	  scripts=['pyverge']
 	  )
