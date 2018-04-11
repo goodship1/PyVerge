@@ -6,6 +6,6 @@ setup(
 	  description ='libary to interact with verge blockchain',
 	  author ='gavin goodship',
 	  packages=['PyVerge'],
-	  install_requires=["requests"]
+	  install_requires=["requests"],
 	  scripts=['pyverge']
 	  )
