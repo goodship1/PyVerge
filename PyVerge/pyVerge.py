@@ -1,7 +1,7 @@
 import requests
 import urllib3
 import pyqrcode
-from pyvergeexceptions import QrcodeGenerationErrorS
+from pyvergeexceptions import QrcodeGenerationError
 urllib3.disable_warnings()
 
 
