@@ -15,8 +15,8 @@ def test_Get_connectioncount():
 	url = "https://verge-blockchain.info/api/getconnectioncount"
 	request_To_verge = requests.get(url,verify =  False)
 	assert verge.get_Connectioncount() ==  request_To_verge.text
-	
-	
+
+
 def test_Get_blockhash():
 	index = 0#gensis block location
 	url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
@@ -48,7 +48,7 @@ def test_get_Diffculty():
 	url = "https://verge-blockchain.info/api/getdifficulty"
 	request_To_verge = requests.get(url,verify = False)
 	assert(verge.get_Difficulty())== request_To_verge.text
-	
+
 
 def test_transcation_Search():
 	number_Transaction = 10
@@ -78,4 +78,9 @@ def testing_Negative_index():
 	assert(verge.get_Blockhash(index)) == request_To_verge.text
 
 def testing_Get_qrcode():
+	pass
+
+
+def testing_valid_addressqrcode():
+	"""check too see if the address is valid on the blockchain"""
 	pass
