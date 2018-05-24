@@ -5,9 +5,8 @@ sys.path.insert(0,'../PyVerge/')
 from pyVerge import PyVerge
 
 verge  = PyVerge()
-
-
 verge.get_Qrcode("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")
+#verge.get_Qrcode("lolol")
 
 
 def test_Blockcount():
@@ -88,4 +87,4 @@ def testing_Get_qrcode():
 def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""
 	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
-	
+	assert(verge.get_Qrcode(address))!= "Cant not create Qrcode invalid address"

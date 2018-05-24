@@ -68,14 +68,16 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
+	def check_Valid_address(self):
+		pass
+
 	def get_Qrcode(self,address):
 		#todo check address is valid
+
 		try:
-			if(self.get_Balance(address)=="address not found."):
-				raise QrcodeGenerationError("Cant not create Qrcode invalid address")
+			check = float(self.get_Balance(address))
 		except Exception as err:
-			print(err)
-		else:
-			wallet=pyqrcode.create(address)
-			wallet_To_terminal = wallet.terminal()
-			print(wallet_To_terminal)
+			raise QrcodeGenerationError("cant generate qr code")
+		wallet=pyqrcode.create(address)
+		wallet_To_terminal = wallet.terminal()
+		print(wallet_To_terminal)
