@@ -6,6 +6,10 @@ from pyVerge import PyVerge
 
 verge  = PyVerge()
 
+
+verge.get_Qrcode("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")
+
+
 def test_Blockcount():
 	url = "https://verge-blockchain.info/api/getblockcount"
 	request_To_verge = requests.get(url,verify = False)
@@ -83,4 +87,5 @@ def testing_Get_qrcode():
 
 def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""
-	pass
+	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
+	
