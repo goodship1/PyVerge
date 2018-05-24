@@ -86,6 +86,7 @@ print(verge.get_Block(Hash))
   - Get balance from address
   - Get money supply
   - Get hash information
+  -Gets qrcode from public address
   
 ### Documentation
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
