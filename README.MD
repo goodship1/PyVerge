@@ -16,6 +16,15 @@ A Python api client for intracting with the Verge block exporer
  -  Clone repo
  -  python setup.py install
  
+
+
+## Dependencies
+-  Requests
+-  pyqrcode
+-  If dependencies not installed run Dependencies.sh
+
+
+
  
 ### Usage
 ``` python
