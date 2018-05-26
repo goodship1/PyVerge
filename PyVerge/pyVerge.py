@@ -68,12 +68,9 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
-	def check_Valid_address(self):
-		pass
+	
 
 	def get_Qrcode(self,address):
-		#todo check address is valid
-
 		try:
 			check = float(self.get_Balance(address))
 		except Exception as err:

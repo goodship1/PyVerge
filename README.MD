@@ -21,7 +21,7 @@ A Python api client for intracting with the Verge block exporer
 ## Dependencies
 -  Requests
 -  pyqrcode
--  If dependencies not installed run Dependencies.sh
+-  If dependencies not installed run dependencies.sh
 
 
 
