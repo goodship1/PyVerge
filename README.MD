@@ -24,6 +24,10 @@ A Python api client for intracting with the Verge block exporer
 -  If dependencies not installed run dependencies.sh
 
 
+## TODO
+
+- [x] Add Qrcode support and required tests
+- [ ] Scrap Front page for satoshi value
 
  
 ### Usage

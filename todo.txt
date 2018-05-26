@@ -1,3 +1,0 @@
- - implement getting qr code for address
- - web scrap the satoshi value on the front page
--implement a more detailed look at each address
