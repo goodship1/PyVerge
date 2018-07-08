@@ -78,3 +78,5 @@ class PyVerge(object):
 		wallet=pyqrcode.create(address)
 		wallet_To_terminal = wallet.terminal()
 		print(wallet_To_terminal)
+		
+	#todo adding sizing option to  getqrcode as the qr code is takes up alot of space in terminal
