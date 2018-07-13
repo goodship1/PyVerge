@@ -52,6 +52,7 @@ print(verge.get_Difficulty())
 
 
 address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
+verge.get_Qrcode(address)#prints Qr_code in terminal
 
 print(verge.get_Balance(address))
 2725553425.7179003
