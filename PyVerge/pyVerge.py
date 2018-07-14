@@ -70,7 +70,7 @@ class PyVerge(object):
 
 	
 
-	def get_Qrcode(self,address):
+	def get_Qrcode(self,address ,qr_Size=None):
 		try:
 			check = float(self.get_Balance(address))
 		except Exception as err:
