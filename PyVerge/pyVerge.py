@@ -68,15 +68,21 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
-	
+
 
 	def get_Qrcode(self,address ,qr_Size=None):
 		try:
 			check = float(self.get_Balance(address))
 		except Exception as err:
 			raise QrcodeGenerationError("cant generate qr code")
-		wallet=pyqrcode.create(address)
-		wallet_To_terminal = wallet.terminal()
-		print(wallet_To_terminal)
-		
+		if(qr_Size!=None):
+			wallet=pyqrcode.create(address,size=qr_Size)
+			wallet_To_terminal = wallet.terminal()
+			print(wallet_To_terminal)
+
+		else:
+			wallet=pyqrcode.create(address)
+			wallet_To_terminal = wallet.terminal()
+			print(wallet_To_terminal)
+
 	#todo adding sizing option to  getqrcode as the qr code is takes up alot of space in terminal

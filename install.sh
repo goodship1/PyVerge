@@ -1,4 +1,4 @@
-#if pip installed run the dependencies.sh
+#if pip installed run the install.sh
 
 pip install requests
 pip install pyqrcode

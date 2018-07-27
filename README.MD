@@ -20,15 +20,15 @@ A Python api client for intracting with the Verge block exporer
 
 ## Dependencies
 -  Requests
--  pyqrcode
--  If dependencies not installed run dependencies.sh
+-  Pyqrcode
+-  If dependencies not installed run install.sh
 
 
 ## TODO
 
 - [x] Add Qrcode support and required tests
 - [ ] Scrap Front page for satoshi value
-- [ ] Add Qr-code size adjustment
+- [x] Add Qr-code size adjustment
 - [ ] Add email QR-code functionaility
  
 ### Usage
