@@ -83,6 +83,9 @@ def testing_Negative_index():
 def testing_Get_qrcode():
 	pass
 
+def testing_Get_qrcode_Size():
+	pass
+	
 
 def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""

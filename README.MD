@@ -30,7 +30,9 @@ A Python api client for intracting with the Verge block exporer
 - [ ] Scrap Front page for satoshi value
 - [x] Add Qr-code size adjustment
 - [ ] Add email QR-code functionaility
- 
+- [ ] Add Tests for Get_qrcode 
+
+
 ### Usage
 ``` python
  
