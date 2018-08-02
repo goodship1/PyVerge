@@ -68,7 +68,9 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
-
+	def mail_Qrcode(self):
+		pass
+		#function to send qrcode to email address
 
 	def get_Qrcode(self,address ,qr_Size=None):
 		try:
@@ -85,4 +87,5 @@ class PyVerge(object):
 			wallet_To_terminal = wallet.terminal()
 			print(wallet_To_terminal)
 
-	#todo adding sizing option to  getqrcode as the qr code is takes up alot of space in terminal
+
+	
