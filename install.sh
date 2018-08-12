@@ -1,5 +1,5 @@
-#if pip installed run the install.sh
 
+sudo apt-get install python-pip
 pip install setuptools
 pip install requests
 pip install pyqrcode

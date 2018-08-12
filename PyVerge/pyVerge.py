@@ -42,6 +42,8 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
+	def satoshi(self):
+		pass
 
 
 
@@ -86,6 +88,3 @@ class PyVerge(object):
 			wallet=pyqrcode.create(address)
 			wallet_To_terminal = wallet.terminal()
 			print(wallet_To_terminal)
-
-
-	
