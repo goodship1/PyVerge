@@ -39,7 +39,8 @@ def get_Balance():
 	request_To_verge = requests.get(url,verify = False)
 	assert(verge.get_Balance(address)) == request_To_verge.text
 
-
+def satoshi_Test():
+	pass
 
 
 def test_Get_moneysupply():
@@ -85,7 +86,7 @@ def testing_Get_qrcode():
 
 def testing_Get_qrcode_Size():
 	pass
-	
+
 
 def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""

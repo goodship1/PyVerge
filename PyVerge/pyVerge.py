@@ -43,8 +43,7 @@ class PyVerge(object):
 
 
 	def satoshi(self):
-		pass
-
+		 pass
 
 
 	def get_Moneysupply(self):
@@ -83,7 +82,6 @@ class PyVerge(object):
 			wallet=pyqrcode.create(address,size=qr_Size)
 			wallet_To_terminal = wallet.terminal()
 			print(wallet_To_terminal)
-
 		else:
 			wallet=pyqrcode.create(address)
 			wallet_To_terminal = wallet.terminal()
