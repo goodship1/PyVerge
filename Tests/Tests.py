@@ -42,7 +42,9 @@ def get_Balance():
 def satoshi_Test():
 	pass
 
-
+def satoshi_Helper_test():
+	pass
+	
 def test_Get_moneysupply():
 	url = "https://verge-blockchain.info/ext/getmoneysupply"
 	request_To_verge = requests.get(url,verify = False)

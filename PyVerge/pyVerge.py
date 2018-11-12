@@ -44,8 +44,10 @@ class PyVerge(object):
 
 	def satoshi(self):
 		 pass
-
-
+	
+	def _satoshiHelper(self):
+		pass
+	
 	def get_Moneysupply(self):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
 		request_To_verge = requests.get(url,verify = False)
