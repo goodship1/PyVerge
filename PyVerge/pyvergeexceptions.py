@@ -4,3 +4,7 @@ class pyVergeexceptions(Exception):
 
 class QrcodeGenerationError(pyVergeexceptions):
     pass
+
+
+class ConnectionError(pyVergeexceptions):
+    pass
