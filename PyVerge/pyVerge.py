@@ -1,3 +1,4 @@
+from bs4 import BeautfulSoup
 import requests
 import urllib3
 import pyqrcode
@@ -44,10 +45,14 @@ class PyVerge(object):
 
 	def satoshi(self):
 		 pass
-	
+
 	def _satoshiHelper(self):
-		pass
-	
+		url  = "https://verge-blockchain.info/"
+		request_To_url = requests.get(url)
+		if(request_To_url == 200):
+			pass
+
+
 	def get_Moneysupply(self):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
 		request_To_verge = requests.get(url,verify = False)
