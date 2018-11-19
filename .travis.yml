@@ -7,4 +7,6 @@ python:
  
   install:
     - pip install requests
-    - pip install soup
+    - pip install bs4
+    - pip install pyqrcode
+    
