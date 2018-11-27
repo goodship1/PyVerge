@@ -1,4 +1,4 @@
-from bs4 import BeautfulSoup
+from bs4 import BeautifulSoup
 import requests
 import urllib3
 import pyqrcode
@@ -51,7 +51,6 @@ class PyVerge(object):
 		request_To_url = requests.get(url)
 		if(request_To_url == 200):
 			pass
-
 
 	def get_Moneysupply(self):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
