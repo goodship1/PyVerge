@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+import ast
 import requests
 import urllib3
 import pyqrcode
@@ -44,14 +44,25 @@ class PyVerge(object):
 
 
 	def satoshi(self):
-		 pass
-
+		satoshi_Calulation = self._satoshiHelper()
+	
+		 
+		 
 	def _satoshiHelper(self):
-		url  = "https://verge-blockchain.info/"
-		request_To_url = requests.get(url)
-		if(request_To_url == 200):
-			pass
-
+		btc_Price_url = "https://min-api.cryptocompare.com/data/price?fsym=%s&tsyms=%s"%("BTC","USD")
+		verge_Price_url ="https://min-api.cryptocompare.com/data/price?fsym=%s&tsyms=%s"%("XVG","USD")
+		request_Btc_price = requests.get(btc_Price_url)
+		request_Verge_price = requests.get(verge_Price_url)
+		return self._satoshiUnicodeformatting(request_Btc_price.text,request_Verge_price.text)
+		
+		
+	
+	def _satoshiUnicodeformatting(self,btc_Request,Verge_Request):
+		price = "USD"
+		btc = ast.literal_eval(btc_Request)
+		verge = ast.literal_eval(Verge_Request)
+		return (btc[price],verge[price])
+	
 	def get_Moneysupply(self):
 		url = "https://verge-blockchain.info/ext/getmoneysupply"
 		request_To_verge = requests.get(url,verify = False)
