@@ -5,8 +5,8 @@ sys.path.insert(0,'../PyVerge/')
 from pyVerge import PyVerge
 
 verge  = PyVerge()
-verge.get_Qrcode("DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9")
-#verge.get_Qrcode("lolol")
+
+
 
 
 def test_Blockcount():
@@ -41,10 +41,11 @@ def get_Balance():
 
 def test_Satoshi():
 	satoshi_Return_value = verge.satoshi()
-	assert(type(satoshi_Return_value))==float
+	assert(type(satoshi_Return_value))==str
 
 def satoshi_Helper_test():
-	pass
+	satoshi_Return_value = verge._satoshiHelper()
+	assert(type(satoshi_Return_value))==tuple
 	
 def test_Get_moneysupply():
 	url = "https://verge-blockchain.info/ext/getmoneysupply"
@@ -69,7 +70,7 @@ def test_Get_block():
 	Hash = "fbb3b1c4da06a043e6b2f45799bda5703c115911f80a58e050423930bc0bfa68"
 	url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
 	request_To_verge = requests.get(url,verify=False)
-	assert(verge.test_Get_block(Hash)) == request_To_verge.text
+	assert(verge.get_Block(Hash)) == request_To_verge.text
 
 def test_Get_Distribution():
 	url = "https://verge-blockchain.info/ext/getdistribution"
@@ -95,3 +96,5 @@ def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""
 	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
 	assert(verge.get_Qrcode(address))!= "Cant not create Qrcode invalid address"
+
+
