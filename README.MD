@@ -27,7 +27,7 @@ A Python api client for intracting with the Verge block exporer
 ## TODO
 
 - [x] Add Qrcode support and required tests
-- [ ] Scrap Front page for satoshi value
+- [x] Scrap Front page for satoshi value
 - [x] Add Qr-code size adjustment
 - [ ] Add email QR-code functionaility
 - [ ] Add Tests for Get_qrcode 
@@ -103,7 +103,7 @@ print(verge.get_Block(Hash))
   - Get balance from address
   - Get money supply
   - Get hash information
-  -Gets qrcode from public address
+  - Gets qrcode from public address
   
 ### Documentation
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
