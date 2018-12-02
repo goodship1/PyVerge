@@ -1,3 +1,4 @@
+from __future__ import division
 import ast
 import requests
 import urllib3
@@ -45,6 +46,9 @@ class PyVerge(object):
 
 	def satoshi(self):
 		satoshi_Calulation = self._satoshiHelper()
+		btc = satoshi_Calulation[0]
+		verge = satoshi_Calulation[1]
+		return format(verge/btc,'.10f')
 	
 		 
 		 

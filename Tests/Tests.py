@@ -39,8 +39,9 @@ def get_Balance():
 	request_To_verge = requests.get(url,verify = False)
 	assert(verge.get_Balance(address)) == request_To_verge.text
 
-def satoshi_Test():
-	pass
+def test_Satoshi():
+	satoshi_Return_value = verge.satoshi()
+	assert(type(satoshi_Return_value))==float
 
 def satoshi_Helper_test():
 	pass
@@ -64,11 +65,11 @@ def test_transcation_Search():
 	assert(verge.transcation_Search(number_Transaction,min_Amount)) == request_To_verge.text
 
 
-def get_Block():
+def test_Get_block():
 	Hash = "fbb3b1c4da06a043e6b2f45799bda5703c115911f80a58e050423930bc0bfa68"
 	url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
 	request_To_verge = requests.get(url,verify=False)
-	assert(verge.get_Block(Hash)) == request_To_verge.text
+	assert(verge.test_Get_block(Hash)) == request_To_verge.text
 
 def test_Get_Distribution():
 	url = "https://verge-blockchain.info/ext/getdistribution"

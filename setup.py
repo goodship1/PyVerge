@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	  name = 'pyVerge',
-	  version = '1.1',
+	  version = '1.2',
 	  description ='libary to interact with verge blockchain',
 	  author ='gavin goodship',
 	  packages=['PyVerge'],
