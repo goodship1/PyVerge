@@ -99,11 +99,15 @@ print(verge.get_Block(Hash))
   "signature": "3044022034dc7ff97611880772bd16dfb2b8745e6dffb47f4e274ebe14d531105245f3b102200b267c8f034672b2ae84ce5e38ae2a7d26930c5572f4575c266faa55808e3afb"
 }
 ```
+
+![alt-text](https://user-images.githubusercontent.com/10147276/50864968-9b6d4900-139b-11e9-976c-44f19591c454.gif)
+
 ### Features
   - Get balance from address
   - Get money supply
   - Get hash information
   - Gets qrcode from public address
+  - Get satoshi value
   
 ### Documentation
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
