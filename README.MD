@@ -100,6 +100,8 @@ print(verge.get_Block(Hash))
 }
 ```
 
+### QRCODE-DEMO
+
 ![alt-text](https://user-images.githubusercontent.com/10147276/50864968-9b6d4900-139b-11e9-976c-44f19591c454.gif)
 
 ### Features
