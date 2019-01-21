@@ -1,6 +1,7 @@
 import pytest
 import requests
 import sys
+import pyqrcode
 sys.path.insert(0,'../PyVerge/')
 from pyVerge import PyVerge
 
@@ -86,15 +87,17 @@ def testing_Negative_index():
 	assert(verge.get_Blockhash(index)) == request_To_verge.text
 
 def testing_Get_qrcode():
-	pass
-
-def testing_Get_qrcode_Size():
-	pass
+	'''testing of get_qrcode with invalid  address'''
+	invalid_address = "aaaaaaaa"
+	assert(verge.get_Qrcode(invalid_address)) == "cant generate qr code"
+	
+	
+	
 
 
 def testing_valid_addressqrcode():
 	"""check too see if the address is valid on the blockchain"""
-	address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
-	assert(verge.get_Qrcode(address))!= "Cant not create Qrcode invalid address"
+	valid_address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
+	assert(verge.get_Qrcode(valid_address))!= "cant generate qr code"
 
 
