@@ -110,7 +110,8 @@ print(verge.get_Block(Hash))
   - Get hash information
   - Gets qrcode from public address
   - Get satoshi value
-  
+  - Transaction history from address
+
 ### Documentation
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
   
