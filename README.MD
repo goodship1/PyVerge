@@ -31,7 +31,7 @@ A Python api client for intracting with the Verge block exporer
 - [x] Add Qr-code size adjustment
 - [ ] Add email QR-code functionaility
 - [x] Add Tests for Get_qrcode 
-
+- [ ] Add Some sorting to transactions of addresses 
 
 ### Usage
 ``` python
