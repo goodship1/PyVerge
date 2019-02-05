@@ -1,6 +1,6 @@
 # PyVerge
 
-A Python api client for intracting with the Verge block exporer
+A Python api  for interacting with the Verge block explorer 
 
 ### Table of content
  
