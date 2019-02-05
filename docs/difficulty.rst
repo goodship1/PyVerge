@@ -4,7 +4,7 @@ Get Difficulty
 
 Get Block Difficulty 
 
-.. code:block python
+.. code::block python
     
     Verge = PyVerge()
     difficulty  = Verge.get_Difficulty()
