@@ -14,9 +14,8 @@ A Python api client for intracting with the Verge block exporer
 ## Installation
 
  -  Clone repo
- -  python setup.py install
- 
-
+ -  Python setup.py install
+ -  Run install.sh
 
 ## Dependencies
 -  Requests
@@ -33,24 +32,13 @@ A Python api client for intracting with the Verge block exporer
 - [ ] Add Tests for Get_qrcode 
 
 
-### Usage
+### Short Demo
 ``` python
  
 from PyVerge import PyVerge
 
 verge = PyVerge()
 
-print(verge.get_Difficulty())
-
-{
-  "proof-of-work": 51471.70202057,
-  "proof-of-work-next": 74007.92238899,
-  "proof-of-work-last-height": 1945220,
-  "proof-of-stake": 0.00024414,
-  "proof-of-stake-next": 74007.92238899,
-  "proof-of-stake-last-height": 0,
-  "search-interval": 0
-}
 
 
 address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
@@ -98,17 +86,13 @@ print(verge.get_Block(Hash))
   ],
   "signature": "3044022034dc7ff97611880772bd16dfb2b8745e6dffb47f4e274ebe14d531105245f3b102200b267c8f034672b2ae84ce5e38ae2a7d26930c5572f4575c266faa55808e3afb"
 }
-```
+``
 ### Features
   - Get balance from address
   - Get money supply
   - Get hash information
   - Gets qrcode from public address
-  
-### Documentation
-  - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
-  
-  
+    
   
 ### Contribution 
  - Feel to create a pull request 
