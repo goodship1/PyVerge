@@ -15,28 +15,28 @@ class PyVerge(object):
 		return "PyVerge is a python libary which instracts with verge blockchain"
 
 
-	def get_Difficulty(self):
+	def get_difficulty(self):
 		url = "https://verge-blockchain.info/api/getdifficulty"
 		request_To_verge = requests.get(url ,verify = False)
 		return request_To_verge.text
 
-	def get_Connectioncount(self):
+	def get_connectioncount(self):
 		url = "https://verge-blockchain.info/api/getconnectioncount"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 
 
-	def get_Blockcount(self):
+	def get_blockcount(self):
 		url  = "https://verge-blockchain.info/api/getblockcount"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 
-	def get_Block(self,Hash):
+	def get_block(self,Hash):
 		url = "https://verge-blockchain.info/api/getblock?hash=%s"%Hash
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 
-	def get_Blockhash(self,index=0):
+	def get_blockhash(self,index=0):
 		"""gets the block hash at index value
 		if no value provided gets the gensis block by default"""
 		url = "https://verge-blockchain.info/api/getblockhash?index=%s"%index
@@ -44,7 +44,7 @@ class PyVerge(object):
 		return request_To_verge.text
 
 
-	def satoshi(self):
+	def get_satoshi(self):
 		satoshi_Calulation = self._satoshiHelper()
 		btc = satoshi_Calulation[0]
 		verge = satoshi_Calulation[1]
@@ -77,14 +77,14 @@ class PyVerge(object):
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 
-	def get_Balance(self,address):
+	def get_balance(self,address):
 		url = "https://verge-blockchain.info/ext/getbalance/%s"%address
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text
 
 
 
-	def get_Distribution(self):
+	def get_distribution(self):
 		url = "https://verge-blockchain.info/ext/getdistribution"
 		request_To_verge = requests.get(url,verify = False)
 		return request_To_verge.text

@@ -1,22 +1,20 @@
 # PyVerge
 
-A Python api client for intracting with the Verge block exporer
+A Python api  for interacting with the Verge block explorer 
 
 ### Table of content
  
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
-* [Documentation](#documentation)
 * [Contribution](#contribution)
 
 
 ## Installation
 
  -  Clone repo
- -  python setup.py install
- 
-
+ -  Python setup.py install
+ -  Run install.sh
 
 ## Dependencies
 -  Requests
@@ -33,24 +31,13 @@ A Python api client for intracting with the Verge block exporer
 - [x] Add Tests for Get_qrcode 
 - [ ] Add Some sorting to transactions of addresses 
 
-### Usage
+### Short Demo
 ``` python
  
 from PyVerge import PyVerge
 
 verge = PyVerge()
 
-print(verge.get_Difficulty())
-
-{
-  "proof-of-work": 51471.70202057,
-  "proof-of-work-next": 74007.92238899,
-  "proof-of-work-last-height": 1945220,
-  "proof-of-stake": 0.00024414,
-  "proof-of-stake-next": 74007.92238899,
-  "proof-of-stake-last-height": 0,
-  "search-interval": 0
-}
 
 
 address = "DQkwDpRYUyNNnoEZDf5Cb3QVazh4FuPRs9"
@@ -100,15 +87,19 @@ print(verge.get_Block(Hash))
 }
 ```
 
+<<<<<<< HEAD
 ### QRCODE-DEMO
 
 ![alt-text](https://user-images.githubusercontent.com/10147276/50864968-9b6d4900-139b-11e9-976c-44f19591c454.gif)
+=======
+>>>>>>> 90d321ea34e46f1ddcbe38df86ea3ea35682473a
 
 ### Features
   - Get balance from address
   - Get money supply
   - Get hash information
   - Gets qrcode from public address
+<<<<<<< HEAD
   - Get satoshi value
   - Transaction history from address
 
@@ -116,6 +107,9 @@ print(verge.get_Block(Hash))
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
   
   
+=======
+    
+>>>>>>> 90d321ea34e46f1ddcbe38df86ea3ea35682473a
   
 ### Contribution 
  - Feel to create a pull request 
