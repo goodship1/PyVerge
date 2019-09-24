@@ -1,5 +1,7 @@
 # PyVerge
 
+![alt-text](https://user-images.githubusercontent.com/10147276/65513830-f1573200-ded3-11e9-9a7b-4d2bae093e5e.png)
+
 A Python api  for interacting with the Verge block explorer 
 
 ### Table of content
