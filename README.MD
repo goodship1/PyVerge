@@ -87,7 +87,7 @@ print(verge.get_Block(Hash))
 }
 ```
 
-<<<<<<< HEAD
+
 ### QRCODE-DEMO
 
 ![alt-text](https://user-images.githubusercontent.com/10147276/50864968-9b6d4900-139b-11e9-976c-44f19591c454.gif)
@@ -98,8 +98,7 @@ print(verge.get_Block(Hash))
   - Get balance from address
   - Get money supply
   - Get hash information
-  - Gets qrcode from public address
-<<<<<<< HEAD
+  - Gets qrcode from public addres
   - Get satoshi value
   - Transaction history from address
 
@@ -108,9 +107,7 @@ print(verge.get_Block(Hash))
   
   
 =======
-    
->>>>>>> 90d321ea34e46f1ddcbe38df86ea3ea35682473a
-  
+      
 ### Contribution 
  - Feel to create a pull request 
  
