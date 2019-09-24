@@ -24,14 +24,6 @@ A Python api  for interacting with the Verge block explorer
 -  If dependencies not installed run install.sh
 
 
-## TODO
-
-- [x] Add Qrcode support and required tests
-- [x] Scrap Front page for satoshi value
-- [x] Add Qr-code size adjustment
-- [ ] Add email QR-code functionaility
-- [x] Add Tests for Get_qrcode 
-- [ ] Add Some sorting to transactions of addresses 
 
 ### Short Demo
 ``` python
