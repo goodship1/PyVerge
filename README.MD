@@ -91,8 +91,7 @@ print(verge.get_Block(Hash))
 ### QRCODE-DEMO
 
 ![alt-text](https://user-images.githubusercontent.com/10147276/50864968-9b6d4900-139b-11e9-976c-44f19591c454.gif)
-=======
->>>>>>> 90d321ea34e46f1ddcbe38df86ea3ea35682473a
+
 
 ### Features
   - Get balance from address
@@ -106,7 +105,6 @@ print(verge.get_Block(Hash))
   - [click](https://github.com/goodship1/PyVerge/wiki/Documentation)
   
   
-=======
       
 ### Contribution 
  - Feel to create a pull request 
